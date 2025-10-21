@@ -7,7 +7,7 @@ tool:
         - c6g
 
 tasks:
-  testeduard:
+  testeduardmigration2:
     type: Python
     config:
       script: test.py
