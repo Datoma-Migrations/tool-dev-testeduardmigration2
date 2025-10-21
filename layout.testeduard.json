@@ -1,0 +1,31 @@
+{
+  "parameters": [
+    {
+      "label": "Example",
+      "parameters": [
+        {
+          "key": "supertest",
+          "label": "Just a dummy",
+          "type": "Dropdown",
+          "bind": {
+            "options": [
+              "test",
+              "supertest",
+              "ultratest"
+            ]
+          },
+          "model": "supertest"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "key": "network",
+      "label": "Input Network",
+      "model": [],
+      "shownExtensions": [".net"],
+      "maxFiles": 1
+    }
+  ]
+}

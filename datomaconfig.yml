@@ -1,0 +1,27 @@
+tool:
+  compute:
+    arm64:
+      enable: true
+      spot: true
+      instance_types:
+        - c6g
+
+tasks:
+  testeduard:
+    type: Python
+    config:
+      script: test.py
+      output_folder: /app/results
+      upload_output_folder: true
+      upload_output_zip: false
+      zip_filename: testResults
+      input_mapping:
+        network: network
+    autoscaling:
+      default:
+        vcpu:
+          base: 2
+          max: 2
+        ram:
+          base: 3584
+          max: 3584
